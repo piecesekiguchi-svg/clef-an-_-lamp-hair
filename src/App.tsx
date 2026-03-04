@@ -68,7 +68,7 @@ const StickyFooter = () => (
           className="flex flex-col items-center justify-center py-2.5 bg-[#8c8279] text-white rounded-sm hover:bg-[#7a7067] transition-colors shadow-sm"
         >
           <span className="text-[10px] opacity-90 mb-0.5 tracking-widest">富谷店</span>
-          <span className="text-xs md:text-sm font-medium tracking-wide">LINE予約</span>
+          <span className="text-xs md:text-sm font-medium tracking-wide">公式LINE</span>
         </a>
         <a 
           href="https://lin.ee/19WgSxSB" 
@@ -76,8 +76,8 @@ const StickyFooter = () => (
           rel="noopener noreferrer"
           className="flex flex-col items-center justify-center py-2.5 bg-[#8c8279] text-white rounded-sm hover:bg-[#7a7067] transition-colors shadow-sm"
         >
-          <span className="text-[10px] opacity-90 mb-0.5 tracking-widest">泉中央</span>
-          <span className="text-xs md:text-sm font-medium tracking-wide">LINE予約</span>
+          <span className="text-[10px] opacity-90 mb-0.5 tracking-widest">泉中央店</span>
+          <span className="text-xs md:text-sm font-medium tracking-wide">公式LINE</span>
         </a>
         <a 
           href="https://www.instagram.com/clefan_tomiya/" 
