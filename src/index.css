@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300;400;500&family=Shippori+Mincho:wght@400;500;600&family=Cormorant+Garamond:wght@300;400;500&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Noto Sans JP", "Inter", ui-sans-serif, system-ui, sans-serif;
+  --font-serif: "Shippori Mincho", "Cormorant Garamond", "Times New Roman", Times, serif;
+  
+  /* Natural & Minimal Palette */
+  --color-natural-bg: #ffffff;      /* Pure white background */
+  --color-natural-sub-bg: #fcfbf9;  /* Very subtle warm off-white for sections */
+  --color-natural-text: #5c544e;    /* Muted brown-gray text (softer than black) */
+  --color-natural-heading: #4a423e; /* Darker brown for headings */
+  --color-natural-accent: #a89f91;  /* Soft beige/greige accent */
+  --color-natural-border: #e8e6e3;  /* Delicate border color */
+}
+
+body {
+  background-color: var(--color-natural-bg);
+  color: var(--color-natural-text);
+  font-family: var(--font-sans);
+  font-weight: 300; /* Lighter weight overall */
+  letter-spacing: 0.03em; /* Slightly more tracking */
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--font-serif);
+  color: var(--color-natural-heading);
+  font-weight: 500; /* Not too bold */
+  letter-spacing: 0.05em;
+}
