@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { cn } from '@/src/lib/utils';
-import { ChevronRight, Star, MapPin, Phone, Clock, Calendar, CheckCircle2, AlertCircle, X } from 'lucide-react';
+import { ChevronRight, Star, MapPin, Phone, Clock, Calendar, CheckCircle2, AlertCircle, X, Instagram } from 'lucide-react';
 
 // --- Components ---
 
@@ -57,14 +57,42 @@ const Card = ({ children, className }: { children: React.ReactNode, className?: 
   </div>
 );
 
-const StickyFooter = ({ onOpenModal }: { onOpenModal: () => void }) => (
-  <div className="fixed bottom-0 left-0 right-0 z-50 p-4 bg-white/90 backdrop-blur-sm border-t border-[#f0efed] flex justify-center items-center">
-    <Button 
-      onClick={onOpenModal}
-      className="w-full md:w-auto md:min-w-[320px] shadow-lg bg-[#8c8279] text-white hover:bg-[#7a7067] text-sm tracking-widest py-3"
-    >
-      空席を確認する
-    </Button>
+const StickyFooter = () => (
+  <div className="fixed bottom-0 left-0 right-0 z-50 bg-white/95 backdrop-blur-md border-t border-[#e8e6e3] shadow-[0_-4px_20px_rgba(0,0,0,0.03)]">
+    <div className="max-w-3xl mx-auto px-4 py-3 md:py-4">
+      <div className="grid grid-cols-3 gap-3">
+        <a 
+          href="https://lin.ee/WDv6EjZ" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex flex-col items-center justify-center py-2.5 bg-[#8c8279] text-white rounded-sm hover:bg-[#7a7067] transition-colors shadow-sm"
+        >
+          <span className="text-[10px] opacity-90 mb-0.5 tracking-widest">富谷店</span>
+          <span className="text-xs md:text-sm font-medium tracking-wide">LINE予約</span>
+        </a>
+        <a 
+          href="https://lin.ee/19WgSxSB" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex flex-col items-center justify-center py-2.5 bg-[#8c8279] text-white rounded-sm hover:bg-[#7a7067] transition-colors shadow-sm"
+        >
+          <span className="text-[10px] opacity-90 mb-0.5 tracking-widest">泉中央</span>
+          <span className="text-xs md:text-sm font-medium tracking-wide">LINE予約</span>
+        </a>
+        <a 
+          href="https://www.instagram.com/clefan_tomiya/" 
+          target="_blank" 
+          rel="noopener noreferrer"
+          className="flex flex-col items-center justify-center py-2.5 bg-[#4a423e] text-white rounded-sm hover:bg-[#3a322e] transition-colors shadow-sm"
+        >
+          <span className="text-[10px] opacity-90 mb-0.5 tracking-widest">Official</span>
+          <div className="flex items-center gap-1">
+            <Instagram className="w-3 h-3 md:w-4 md:h-4" />
+            <span className="text-xs md:text-sm font-medium tracking-wide">Instagram</span>
+          </div>
+        </a>
+      </div>
+    </div>
   </div>
 );
 
@@ -744,7 +772,7 @@ export default function App() {
           </Button>
         </FadeIn>
       </footer>
-      <StickyFooter onOpenModal={openModal} />
+      <StickyFooter />
     </div>
   );
 }
