@@ -179,18 +179,16 @@ export default function App() {
         </div>
         
         <div className="relative z-10 text-center text-[#4a423e] px-6 max-w-4xl mx-auto mt-12">
-          <div className="bg-[#fcfbf9]/90 p-10 md:p-16 rounded-sm border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.02)] inline-block">
+          <div className="bg-[#fcfbf9]/90 p-8 md:p-16 rounded-sm border border-white/20 shadow-[0_8px_32px_rgba(0,0,0,0.02)] inline-block">
             <p className="text-xs md:text-sm tracking-[0.3em] mb-8 uppercase text-[#8c8279] font-medium">SNS総フォロワー20万人超</p>
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-serif font-light leading-relaxed mb-10 tracking-wide text-[#4a423e]">
               “自分史上最高の艶髪”を、<br />
               完全個室で
             </h1>
-            <p className="text-base md:text-lg font-light mb-16 text-[#5c544e] leading-loose tracking-wider">
-              大人女性の髪悩み<br />
-              （艶・うねり・白髪ダメージ）に、<br />
-              髪質改善のスペシャリストが<br />
-              対応。
-              <span className="text-xs mt-4 block text-[#8c8279]">口コミ平均4.94（直近1年集計）</span>
+            <p className="text-[11px] md:text-lg font-light mb-16 text-[#5c544e] leading-loose tracking-normal md:tracking-wider">
+              大人女性の髪悩み（艶・うねり・白髪ダメージ）に<br />
+              髪質改善のスペシャリストが対応。
+              <span className="text-[10px] md:text-xs mt-4 block text-[#8c8279]">口コミ平均4.94（直近1年集計）</span>
             </p>
             <div className="flex flex-col sm:flex-row gap-6 justify-center">
               <Button 
@@ -217,18 +215,16 @@ export default function App() {
               </h2>
               <p className="text-[#5c544e] leading-loose font-light text-sm tracking-wide">
                 はじめての方へ。<br />
-                私たちは、いきなり<br />
-                施術に入りません。<br /><br />
+                私たちは、いきなり施術に入りません。<br /><br />
                 まずは、今の髪の状態を<br />
-                一緒に見つめる時間を<br />
-                大切にします。
+                一緒に見つめる時間を大切にします。
               </p>
               
               <div className="space-y-6 mt-10">
                 <div className="p-8 bg-white rounded-sm shadow-[0_2px_20px_-5px_rgba(0,0,0,0.03)] border border-[#f5f4f2] relative overflow-hidden group hover:border-[#e8e6e3] transition-colors">
                   <div className="absolute top-0 right-0 bg-[#f5f4f2] text-[#8c8279] text-[10px] px-3 py-1 tracking-widest">NO.1</div>
                   <div className="mb-4">
-                    <h3 className="font-serif text-xl text-[#4a423e] mb-1">髪質改善縮毛矯正（カット無し）</h3>
+                    <h3 className="font-serif text-sm md:text-xl text-[#4a423e] mb-1">髪質改善縮毛矯正（カット無し）</h3>
                     <p className="text-[10px] text-[#a89f91] tracking-wider">期間限定プライス</p>
                   </div>
                   <div className="flex items-baseline gap-4">
@@ -239,7 +235,7 @@ export default function App() {
 
                 <div className="p-8 bg-white rounded-sm shadow-[0_2px_20px_-5px_rgba(0,0,0,0.03)] border border-[#f5f4f2] group hover:border-[#e8e6e3] transition-colors">
                   <div className="mb-4">
-                    <h3 className="font-serif text-xl text-[#4a423e] mb-1">カラー＋髪質改善ヘアエステ</h3>
+                    <h3 className="font-serif text-sm md:text-xl text-[#4a423e] mb-1">カラー＋髪質改善ヘアエステ</h3>
                     <p className="text-[10px] text-[#a89f91] tracking-wider">TOPスタイリスト担当 / 限定枠</p>
                   </div>
                   <div className="flex items-baseline gap-4">
@@ -312,10 +308,9 @@ export default function App() {
             </div>
           </FadeIn>
           <FadeIn className="order-1 md:order-2 space-y-8">
-            <h2 className="text-2xl md:text-3xl font-serif text-[#4a423e] leading-relaxed">
+            <h2 className="text-xl md:text-3xl font-serif text-[#4a423e] leading-relaxed">
               原因は髪質だけじゃない。<br />
-              “残留”が浸透と<br />
-              持続を邪魔する
+              “残留”が浸透と持続を邪魔する
             </h2>
             <ul className="space-y-5">
               {[
@@ -366,7 +361,7 @@ export default function App() {
 
         <div className="grid md:grid-cols-3 gap-10">
           {[
-            { title: "成分表診断", desc: "ホームケア診断を行い、正しい知識共有と日常ケアまでサポート。", img: "https://images.unsplash.com/photo-1527799822344-42ad8c5827d7?q=80&w=2071&auto=format&fit=crop", aspect: "aspect-[3/4]" },
+            { title: "成分表診断", desc: <>ホームケア診断を行い<br />正しい知識共有と日常ケアまでサポート。</>, img: "https://lh3.googleusercontent.com/d/1MpIQSmxinrRsafMD_8K3-631b06FJYdk", aspect: "aspect-[3/4]" },
             { title: "都度調合", desc: "髪質改善の薬剤は毎回オーダーメイドで調合します。", img: "https://lh3.googleusercontent.com/d/1uzcRlFTbotWM5kGuYYRMLRsO6Arh_6W6", aspect: "aspect-[3/4]" },
             { title: "マンツーマン", desc: "最初から最後まで担当が対応。個室空間で本音を話せます。", img: "https://lh3.googleusercontent.com/d/17hY0skS6XLDTVmspluTDgHdIRGdcdOGK", aspect: "aspect-[4/3]" }
           ].map((item, i) => (
@@ -381,7 +376,7 @@ export default function App() {
                   />
                 </div>
                 <h3 className="text-lg font-serif mb-4 text-[#4a423e] tracking-wide">{item.title}</h3>
-                <p className="text-[#5c544e] text-xs leading-loose font-light tracking-wide">{item.desc}</p>
+                <p className="text-[#5c544e] text-sm leading-loose font-light tracking-wide">{item.desc}</p>
               </div>
             </FadeIn>
           ))}
