@@ -308,7 +308,7 @@ export default function App() {
             </div>
           </FadeIn>
           <FadeIn className="order-1 md:order-2 space-y-8">
-            <h2 className="text-xl md:text-3xl font-serif text-[#4a423e] leading-relaxed">
+            <h2 className="text-[23px] md:text-4xl font-serif text-[#4a423e] leading-relaxed">
               原因は髪質だけじゃない。<br />
               “残留”が浸透と持続を邪魔する
             </h2>
@@ -557,9 +557,9 @@ export default function App() {
             </div>
           </FadeIn>
           <FadeIn className="space-y-10">
-            <h2 className="text-3xl md:text-4xl font-serif leading-relaxed text-[#4a423e]">
-              “人生観が変わる髪質改善”を、<br />
-              来店前から体感してほしい
+            <h2 className="text-2xl md:text-4xl font-serif leading-relaxed text-[#4a423e]">
+              <span className="inline-block">“人生観が変わる髪質改善”を</span><br />
+              <span className="inline-block">来店前から体感してほしい</span>
             </h2>
             <div className="space-y-8 text-[#5c544e] text-base leading-loose font-light tracking-wide">
               <p>
